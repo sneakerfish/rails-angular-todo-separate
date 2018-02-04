@@ -6,6 +6,16 @@
       <input type="text" style="width: 300px" class="form-control" required
              [(ngModel)]="todo.name" name="todoName">
     </div>
+    <label class="col-xs-4 control-label" for="">Description:</label>
+    <div class="col-xs-8">
+      <input type="text" style="width: 300px" class="form-control"
+	     [(ngModel)]="todo.description" name="todoDescription">
+    </div>
+    <label class="col-xs-4 control-label" for="">completed:</label>
+    <div class="col-xs-8">
+      <input type="text" style="width: 300px" class="form-control"
+	     [(ngModel)]="todo.completeda" name="todoCompletedAt">
+    </div>
     <div>
       <input type="submit" value="Create" />
     </div>
