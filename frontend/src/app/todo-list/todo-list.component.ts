@@ -37,6 +37,6 @@ export class TodoListComponent implements OnInit {
 
   public update(id:string) {
     console.log("update: " + id);
-    this.router.navigateByUrl('/todos/add/' + id);
+    this.router.navigateByUrl('/add/' + id);
   }
 }

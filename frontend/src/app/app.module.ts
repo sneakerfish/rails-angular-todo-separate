@@ -22,15 +22,15 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     FormsModule,
     RouterModule.forRoot([
       {
-      path: 'todos',
+      path: '',
       component: TodoListComponent
       },
       {
-      path: 'todos/add',
+      path: 'add',
       component: TodoAddComponent
       },
       {
-      path: 'todos/add/:id',
+      path: 'add/:id',
       component: TodoAddComponent
       }
     ])

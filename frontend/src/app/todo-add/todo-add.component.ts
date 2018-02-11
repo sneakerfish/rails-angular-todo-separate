@@ -32,14 +32,13 @@ export class TodoAddComponent implements OnInit {
     console.log("Adding a todo: " + this.todo.name);
     if(this.todo.id){
     this.apiService.update("todos/"+this.todo.id,this.todo).subscribe((r)=>{
+        console.log("Editing a todo.");
         console.log(r);
-        alert("Todo updated !");
       })
     } else
       this.apiService.post("todos",this.todo).subscribe((r)=>{
       console.log(r);
       this.todo = new Todo();
-      alert("Todo added !");
     });
   }
 }
